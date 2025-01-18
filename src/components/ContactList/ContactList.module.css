@@ -4,6 +4,7 @@ ol {
   margin: 0;
   padding: 0;
 }
+
 .contactList {
   display: flex;
   flex-wrap: wrap;

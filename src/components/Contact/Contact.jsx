@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import s from "../Contact/Contact.module.css";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaUserTie } from "react-icons/fa";
@@ -24,5 +25,11 @@ const Contact = ({ id, name, number, onDelete }) => {
       </button>
     </li>
   );
+};
+Contact.propTypes = {
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  number: PropTypes.string.isRequired,
+  onDelete: PropTypes.func.isRequired,
 };
 export default Contact;

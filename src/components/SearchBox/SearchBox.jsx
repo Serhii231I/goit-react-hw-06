@@ -1,7 +1,12 @@
+import { useDispatch } from "react-redux";
 import s from "../SearchBox/SearchBox.module.css";
-const SearchBox = ({ onSearch }) => {
+import { setFilter } from "../../redux/filtersSlice";
+const SearchBox = () => {
+  // const handleSearch = () => {};
+  const dispatch = useDispatch();
+
   const handleChange = (event) => {
-    onSearch(event.target.value);
+    dispatch(setFilter(event.target.value));
   };
   return (
     <div className={s.searchContainer}>
