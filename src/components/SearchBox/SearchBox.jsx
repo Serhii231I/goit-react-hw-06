@@ -2,7 +2,6 @@ import { useDispatch } from "react-redux";
 import s from "../SearchBox/SearchBox.module.css";
 import { setFilter } from "../../redux/filtersSlice";
 const SearchBox = () => {
-  // const handleSearch = () => {};
   const dispatch = useDispatch();
 
   const handleChange = (event) => {
